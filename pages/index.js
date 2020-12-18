@@ -16,9 +16,10 @@ export async function getStaticProps() {
 
   return {
     props: {
-      articles: data.items
-    }
-  }
+      articles: data.items,
+    },
+    revalidate: 1,
+  };
 }
 
 export default function Home({ articles }) {

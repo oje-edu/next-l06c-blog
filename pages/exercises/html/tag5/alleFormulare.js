@@ -6,7 +6,7 @@ export default function AlleFormulare() {
       <div className="customForm">
         <form action="mailer/contact.php" method="POST">
           <div className="form-group">
-            <label for="input-text" className="form-label">
+            <label htmlFor="input-text" className="form-label">
               Type: text
             </label>
             <input
@@ -18,7 +18,7 @@ export default function AlleFormulare() {
             />
           </div>
           <div className="form-group">
-            <label for="input-text-disabled" className="form-label">
+            <label htmlFor="input-text-disabled" className="form-label">
               Type: text (nur lesbar)
             </label>
             <input
@@ -27,13 +27,12 @@ export default function AlleFormulare() {
               name="text-disabled"
               id="input-text-disabled"
               placeholder="Text eingeben...HAHA"
-              disabled
-              readonly
+              readOnly
             />
           </div>
 
           <div className="form-group">
-            <label for="input-number">Type: number</label>
+            <label htmlFor="input-number">Type: number</label>
             <input
               className="form-control"
               type="number"
@@ -46,7 +45,7 @@ export default function AlleFormulare() {
           </div>
 
           <div className="form-group">
-            <label for="input-range">Type: range</label>
+            <label htmlFor="input-range">Type: range</label>
             <div>
               <span>0</span>
               <input
@@ -64,7 +63,7 @@ export default function AlleFormulare() {
           </div>
 
           <div className="form-group">
-            <label for="input-date">Type: date</label>
+            <label htmlFor="input-date">Type: date</label>
             <input
               type="date"
               className="form-control"
@@ -77,7 +76,7 @@ export default function AlleFormulare() {
           </div>
 
           <div className="form-group">
-            <label for="input-month">Type: month</label>
+            <label htmlFor="input-month">Type: month</label>
             <input
               type="month"
               className="form-control"
@@ -90,7 +89,7 @@ export default function AlleFormulare() {
           </div>
 
           <div className="form-group">
-            <label for="input-month">Type: time</label>
+            <label htmlFor="input-month">Type: time</label>
             <input
               type="time"
               className="form-control"
@@ -102,7 +101,7 @@ export default function AlleFormulare() {
           </div>
 
           <div className="form-group">
-            <label for="input-color">Type: color</label>
+            <label htmlFor="input-color">Type: color</label>
             <input
               type="color"
               className="form-control"
@@ -113,7 +112,7 @@ export default function AlleFormulare() {
           </div>
 
           <div className="form-group">
-            <label for="input-url">Type: url</label>
+            <label htmlFor="input-url">Type: url</label>
             <input
               type="url"
               className="form-control"
@@ -124,31 +123,31 @@ export default function AlleFormulare() {
           </div>
 
           <div className="form-group">
-            <label for="input-tel">Type: tel</label>
+            <label htmlFor="input-tel">Type: tel</label>
             <input
               type="tel"
               className="form-control"
               name="tel"
               id="input-tel"
-              minlength="6"
-              maxlength="12"
+              minLength="6"
+              maxLength="12"
             />
           </div>
 
           <div className="form-group">
-            <label for="input-password">Type: password</label>
+            <label htmlFor="input-password">Type: password</label>
             <input
               type="password"
               className="form-control"
               name="password"
               id="input-password"
-              minlength="8"
-              maxlength="36"
+              minLength="8"
+              maxLength="36"
             />
           </div>
 
           <div className="form-group">
-            <label for="input-hidden">Type: hidden</label>
+            <label htmlFor="input-hidden">Type: hidden</label>
             <input
               type="hidden"
               name="hidden"
@@ -165,7 +164,7 @@ export default function AlleFormulare() {
               name="checkbox"
               id="input-checkbox"
             />
-            <label className="form-check-label" for="input-checkbox">
+            <label className="form-check-label" htmlFor="input-checkbox">
               Type: checkbox
             </label>
           </div>
@@ -177,7 +176,7 @@ export default function AlleFormulare() {
               name="agb"
               id="input-cb-agb"
             />
-            <label className="form-check-label" for="input-cb-agb">
+            <label className="form-check-label" htmlFor="input-cb-agb">
               AGB gelesen
             </label>
           </div>
@@ -185,7 +184,7 @@ export default function AlleFormulare() {
 
           <div className="form-group">
             <div className="form-check">
-              <label className="form-radio-label" for="input-radio">
+              <label className="form-radio-label" htmlFor="input-radio">
                 Type: radio(gaga)
               </label>
               <input
@@ -204,7 +203,7 @@ export default function AlleFormulare() {
                 name="gender"
                 id="input-radio-male"
               />
-              <label className="form-radio-label" for="input-radio-male">
+              <label className="form-radio-label" htmlFor="input-radio-male">
                 Männlich
               </label>
             </div>
@@ -215,7 +214,7 @@ export default function AlleFormulare() {
                 name="gender"
                 id="input-radio-female"
               />
-              <label className="form-radio-label" for="input-radio-female">
+              <label className="form-radio-label" htmlFor="input-radio-female">
                 Weiblich
               </label>
             </div>
@@ -226,7 +225,7 @@ export default function AlleFormulare() {
                 name="gender"
                 id="input-radio-notsure"
               />
-              <label className="form-radio-label" for="input-radio-notsure">
+              <label className="form-radio-label" htmlFor="input-radio-notsure">
                 Nicht sicher
               </label>
             </div>
@@ -234,7 +233,7 @@ export default function AlleFormulare() {
           <hr />
 
           <div className="form-group">
-            <label for="input-search">Type: search</label>
+            <label htmlFor="input-search">Type: search</label>
             <input
               type="search"
               className="form-control"
@@ -251,7 +250,7 @@ export default function AlleFormulare() {
           </div>
 
           <div className="form-group">
-            <label for="select-country">Select Country</label>
+            <label htmlFor="select-country">Select Country</label>
             <select name="country" id="select-country" className="form-select">
               <optgroup label="Europa">
                 <option value="de">Deutschland</option>
@@ -261,7 +260,7 @@ export default function AlleFormulare() {
             </select>
           </div>
           <div className="form-group">
-            <label for="input-file">Type: file</label>
+            <label htmlFor="input-file">Type: file</label>
             <input
               type="file"
               className="form-control"
@@ -271,7 +270,7 @@ export default function AlleFormulare() {
             />
           </div>
           <div className="form-group">
-            <label for="input-firstname" className="form-label">
+            <label htmlFor="input-firstname" className="form-label">
               Rufname:
             </label>
             <input
@@ -283,7 +282,7 @@ export default function AlleFormulare() {
             />
           </div>
           <div className="form-group">
-            <label for="input-lastname" className="form-label">
+            <label htmlFor="input-lastname" className="form-label">
               Familienname:
             </label>
             <input
@@ -296,7 +295,7 @@ export default function AlleFormulare() {
           </div>
 
           <div className="form-group">
-            <label for="input-email">Email:</label>
+            <label htmlFor="input-email">Email:</label>
             <input
               className="form-control"
               type="email"
@@ -307,7 +306,7 @@ export default function AlleFormulare() {
             />
           </div>
           <div className="form-group">
-            <label for="textarea-nachricht">Nachricht:</label>
+            <label htmlFor="textarea-nachricht">Nachricht:</label>
             <textarea
               className="form-control"
               name="nachricht"

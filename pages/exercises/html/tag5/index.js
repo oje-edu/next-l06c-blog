@@ -16,7 +16,7 @@ export default function Tag5() {
             <h1>Übungen am Tag 5</h1>
             <ol type="1">
               <li>
-                <Link href="#formulare">
+                <Link href="#alleFormulare">
                   <a>Alle gängigen Formulare</a>
                 </Link>
               </li>
@@ -43,7 +43,7 @@ export default function Tag5() {
             </ol>
           </nav>
         </div>
-        <section id="formulare">
+        <section id="alleFormulare">
           <h2>Alle gängigen Formulare</h2>
           <AlleFormulare />
         </section>

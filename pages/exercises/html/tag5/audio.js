@@ -1,7 +1,7 @@
 import Link from 'next/link'
 export default function Audio() {
   return (
-    <div class="container">
+    <div className="container">
       <h2>Audio in HTML über &lt;audio&gt;</h2>
       <blockquote>
         Das HTML{" "}

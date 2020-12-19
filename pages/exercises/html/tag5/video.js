@@ -1,7 +1,7 @@
 import Link from 'next/link'
 export default function Video() {
   return (
-    <div class="container">
+    <div className="container">
       <h2>Video in HTML über &lt;video&gt;</h2>
       <blockquote>
         Das HTML{" "}
@@ -50,24 +50,24 @@ export default function Video() {
           </a>
         </li>
       </ul>
-      <div class="embed-responsive embed-responsive-16by9">
+      <div className="embed-responsive embed-responsive-16by9">
         <h5>
           nur mp4 mit <code>&lt;video src</code>
         </h5>
         <video
           src="/assets/video/countdown_short.mp4"
           controls
-          autoplay
+          autoPlay
           muted
         >
           <track src="/assets/video/countdown.de.vtt" default />
         </video>
       </div>
-      <div class="embed-responsive embed-responsive-16by9">
+      <div className="embed-responsive embed-responsive-16by9">
         <h5>
           mit h265.mp4, webm und mp4 <code>&lt;source src</code>
         </h5>
-        <video controls autoplay muted>
+        <video controls autoPlay muted>
           <source
             src="/assets/video/countdown_short.webm"
             type="video/webm"
@@ -76,11 +76,11 @@ export default function Video() {
           <source src="/assets/video/countdown_short_h265.mp4" />
         </video>
       </div>
-      <div class="embed-responsive embed-responsive-16by9">
+      <div className="embed-responsive embed-responsive-16by9">
         <iframe
-          class="embed-responsive-item"
+          className="embed-responsive-item"
           src="https://www.youtube.com/embed/pp3sYjG-gyQ"
-          allowfullScreen
+          allowFullScreen
         ></iframe>
       </div>
       <div className="top">

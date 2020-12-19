@@ -15,11 +15,14 @@
 
 .footer {
   padding: 32px;
-  background-color: #69cff1;
+  background-color:#360449;
+  color:cornsilk;
+  text-align: center;
 }
 
 .footer ul {
-  margin-top: 16px;
+  justify-content: space-between;
+  margin-left: 16px;
   list-style-type: none;
 }
 

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Layout from "../../../../components/layout";
+import Image from 'next/image'
 import InterneVerlinkungen from "./interneVerlinkungen";
 import ExterneVerlinkungen from "./externeVerlinkungen";
 import Bilder from "./bilder";
@@ -33,6 +34,11 @@ export default function Tag3() {
                   <a>Bilder mit relativen Pfad</a>
                 </Link>
               </li>
+              <li>
+                <Link href="#badge">
+                  <a>Auszeichnung</a>
+                </Link>
+              </li>              
             </ol>
           </nav>
         </div>
@@ -55,6 +61,16 @@ export default function Tag3() {
           <h2>Bilder mit relativen Pfad</h2>
           <BilderMitRelativenPfad />
         </section>
+        <section id="badge">
+          <h2>Auszeichnung</h2>
+          <p>Badge</p>
+          <Image
+            src="/assets/images/badges/linkmaster.png"
+            alt="HTML Verlinkungs Grossmeister!"
+            width={5334}
+            height={3759}
+          />
+        </section>        
       </main>
     </Layout>
   );

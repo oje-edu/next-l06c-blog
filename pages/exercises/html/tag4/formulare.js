@@ -3,7 +3,7 @@ export default function Formulare() {
     <div>
       <h5>Formulare</h5>
       <div>
-        <form name="contact" method="POST" data-netlify="true" method="POST" className="customForm">
+        <form name="contact" method="POST"  method="POST" className="customForm">
           <h4>Email-Passwort</h4>
           <div className="mb-3">
             <label for="exampleInputEmail1" className="form-label">Email:</label>
@@ -21,13 +21,18 @@ export default function Formulare() {
           <button type="submit" className="btn btn-primary">HAU WEG!</button>
         </form>
       </div>
+      <div className="top">
+        <Link href="#top">
+          <a>Nach oben</a>
+        </Link>
+      </div>
 
       <hr />
 
       <div className="mb-3">
         <h4>Kontaktformular</h4>
         <div className="customForm">
-          <form name="contact" method="POST" data-netlify="true">
+          <form name="contact" method="POST">
             <div className="form-group">
               <label for="input-firstname" className="form-label">Rufname:</label>
               <input className="form-control" type="text" name="firstname" id="input-firstname" placeholder="Maximilian" />
@@ -49,6 +54,11 @@ export default function Formulare() {
             </div>
           </form>
         </div>
+      </div>
+      <div className="top">
+        <Link href="#top">
+          <a>Nach oben</a>
+        </Link>
       </div>
     </div>
   )

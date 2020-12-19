@@ -1,7 +1,7 @@
 import Link from 'next/link'
 export default function Kontaktform() {
   return (
-    <div className="container">
+    <div className="container" id="hausaufgabe">
       <h3>ANNO 1982</h3>
       <p>Lehrer/in/wusstenwirdamalsschonnichtsogenau</p>
       <p>Zeigt mal her Eure Hausaufgaben!</p>

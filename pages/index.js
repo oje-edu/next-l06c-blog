@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import styles from '../styles/Home.module.css'
+import useTranslation from "next-translate/useTranslation";
+import Layout from "../components/layout";
+//import styles from '../styles/Home.module.css'
 import Image from 'next/image'
 
 
@@ -21,34 +23,38 @@ export async function getStaticProps() {
     revalidate: 1,
   };
 }
-
 export default function Home({ articles }) {
+  let { t } = useTranslation();
   return (
-    <div>
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <h1 className={styles.title}>Start</h1>
-      </Head>
+    <Layout>
       <main>
+      <h1>{t("common:greeting")}</h1>
+        <section>
         
-        <Image 
-          src="/assets/images/scot1.jpg" 
-          alt="scottish highlands" 
-          width={1263} 
-          height={947} 
-          quality={80}
-          priority 
-        />
-        <ul>
-          {articles.map(article => (
-            <li key={article.sys.id}>
-              <Link href={'/articles/' + article.fields.slug}>
-                <a>{article.fields.title}</a>
-              </Link>
-            </li>
-          ))}
-        </ul>
+          <Image 
+            src="/assets/images/scot1.jpg" 
+            alt="scottish highlands" 
+            width={1263} 
+            height={947} 
+            quality={80}
+            priority 
+          />
+          <div className="container">
+            <h1>Agenda (geplant)</h1>
+            <div className="agenda-list">
+            <ul>
+              {articles.map(article => (
+                <li key={article.sys.id}>
+                  <Link href={'/articles/' + article.fields.slug}>
+                    <a>{article.fields.title}</a>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            </div>
+          </div>
+        </section>  
       </main>
-      </div>
+    </Layout>
   )
 }

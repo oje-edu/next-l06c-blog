@@ -77,8 +77,8 @@ export default function Layout({ children }) {
               </NavDropdown>
             </Nav>
             <Nav className="ml-auto">
-              <Nav.Link href="#link">LinkedIn</Nav.Link>
-              <Nav.Link href="#link">Github</Nav.Link>
+              <Nav.Link href="https://linkedin.com/in/thorsten-oje" target="_blank" rel="noreferrer">LinkedIn</Nav.Link>
+              <Nav.Link href="https://github.com/oje-edu" target="_blank" rel="noreferrer">Github</Nav.Link>
               <NavDropdown title="Rechtliches" id="basic-nav-dropdown">
                 <NavDropdown.Item href="/impressum">Impressum</NavDropdown.Item>
                 <NavDropdown.Item href="/datenschutz">

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Layout from "../../../../components/layout";
+import Layout from "../../../components/layout";
 import Image from 'next/image'
 import Tabellen from './tabellen';
 import Formulare from './formulare';

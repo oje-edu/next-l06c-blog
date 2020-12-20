@@ -28,54 +28,54 @@ export default function Layout({ children }) {
               <Nav className="mr-auto">        
                 <NavDropdown title="HTML Übungen" id="basic-nav-dropdown">
                   <NavDropdown.Item>
-                    <Link href="/exercises/html/tag1">
+                    <Link href="/html/1">
                       <a>Tag 1</a>
                     </Link>
                   </NavDropdown.Item>
                   <NavDropdown.Item>
-                    <Link href="/exercises/html/tag2">
+                    <Link href="/html/2">
                       <a>Tag 2</a>
                     </Link>
                   </NavDropdown.Item>
                   <NavDropdown.Item>
-                    <Link href="/exercises/html/tag3">
+                    <Link href="/html/3">
                       <a>Tag 3</a>
                     </Link>
                   </NavDropdown.Item>
                   <NavDropdown.Item>
-                    <Link href="/exercises/html/tag4">
+                    <Link href="/html/4">
                       <a>Tag 4</a>
                     </Link>
                   </NavDropdown.Item>
                   <NavDropdown.Item>
-                    <Link href="/exercises/html/tag5">
+                    <Link href="/html/5">
                       <a>Tag 5</a>
                     </Link>
                   </NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown title="CSS Übungen" id="basic-nav-dropdown">
                   <NavDropdown.Item>
-                    <Link href="/exercises/css/tag1">
+                    <Link href="/css/1">
                       <a>Tag 6</a>
                     </Link>
                   </NavDropdown.Item>
                   <NavDropdown.Item>
-                    <Link href="/exercises/css/tag2">
+                    <Link href="/css/2">
                       <a>Tag 7</a>
                     </Link>
                   </NavDropdown.Item>
                   <NavDropdown.Item>
-                    <Link href="/exercises/css/tag3">
+                    <Link href="/css/3">
                       <a>Tag 8</a>
                     </Link>
                   </NavDropdown.Item>
                   <NavDropdown.Item>
-                    <Link href="/exercises/css/tag4">
+                    <Link href="/css/4">
                       <a>Tag 9</a>
                     </Link>
                   </NavDropdown.Item>
                   <NavDropdown.Item>
-                    <Link href="/exercises/css/tag5">
+                    <Link href="/css/5">
                       <a>Tag 10</a>
                     </Link>
                   </NavDropdown.Item>

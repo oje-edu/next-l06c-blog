@@ -31,7 +31,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   }
 }
 
-export default function HtmlTag(props) {
+export default function Html(props) {
   const router = useRouter()
 
   if (router.isFallback) {

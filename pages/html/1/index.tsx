@@ -1,6 +1,6 @@
 import Layout from '../../../components/layout'
 import Image from 'next/image'
-export default function Tag1 () {
+export default function Html1 () {
   return (
   <Layout>
     <h1>Keine Übung</h1>

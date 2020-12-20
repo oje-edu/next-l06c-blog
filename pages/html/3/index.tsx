@@ -6,7 +6,7 @@ import ExterneVerlinkungen from "./externeVerlinkungen";
 import Bilder from "./bilder";
 import BilderMitRelativenPfad from "./bilderMitRelativenPfad";
 
-export default function Tag3() {
+export default function Tag3 () {
   return (
     <Layout>
       <main>

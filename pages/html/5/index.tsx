@@ -7,7 +7,7 @@ import Video from './video'
 import Kontaktform from './kontaktform'
 
 
-export default function Tag5() {
+export default function Tag5 () {
   return (
     <Layout>
       <main>

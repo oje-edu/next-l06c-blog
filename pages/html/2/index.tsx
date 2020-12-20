@@ -3,7 +3,7 @@ import Layout from "../../../../components/layout";
 import Image from "next/image";
 import TextFormatieren from "./textFormatieren";
 import Auflistungen from "./auflistungen";
-export default function Tag2() {
+export default function Tag2 () {
   return (
     <Layout>
       <main>

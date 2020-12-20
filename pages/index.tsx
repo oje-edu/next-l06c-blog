@@ -29,14 +29,16 @@ export default function Home({ articles }) {
     <Layout>
       <h1>{t("common:greeting")}</h1>
       <section>
+        <a href="https://www.linkedin.com/company/parrotsec/about/" target="_blank" rel="noreferrer">
         <Image
-          src="/assets/images/scot1.jpg"
-          alt="scottish highlands"
-          width={1263}
-          height={947}
+          src="/assets/images/parrotsecurity.jpg"
+          alt="Parrot Security Linux - https://www.linkedin.com/company/parrotsec/about/"
+          width={1191}
+          height={670}
           quality={80}
           priority
         />
+        </a>
 
         <Row className="justify-content-md-between">
           <Col>
@@ -44,7 +46,7 @@ export default function Home({ articles }) {
               {articles.map((article) => (
                 <Card bg="primary" text="white" key={article.sys.id}>
                   <Card.Body>
-                    <Card.Title>Agenda (geplant)</Card.Title>
+                    <Card.Title>Agenda</Card.Title>
                     <Card.Text>{article.fields.description}</Card.Text>
                   </Card.Body>
                   <Card.Footer>

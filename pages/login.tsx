@@ -23,7 +23,7 @@ export default function Login() {
     if(token) {
       const json = jwt.decode(token) as { [key: string]: string }
       setMessage(
-        `Ave ${json.username} , morituri te salutant! Ich bin ${json.admin ? 'der grösste!' : 'Gladiator!'}` 
+        `Ave ${json.username} , morituri te salutant! Ich bin ${json.admin ? 'der grösste LAUCH!' : 'Gladiator!'}` 
       )
 
       const res = await fetch('/api/secret', {

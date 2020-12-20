@@ -5,7 +5,7 @@ import Tabellen from './tabellen';
 import Formulare from './formulare';
 
 
-export default function Tag4() {
+export default function Tag4 () {
   return (
     <Layout>
       <main>

@@ -4,7 +4,7 @@ export default function AlleFormulare() {
     <div className="container">
       <h5>Alle Formularfelder</h5>
       <div className="customForm">
-        <form action="mailer/contact.php" method="POST">
+        <form action="/api/demoKontakt" method="POST">
           <div className="form-group">
             <label htmlFor="input-text" className="form-label">
               Type: text
@@ -184,15 +184,15 @@ export default function AlleFormulare() {
 
           <div className="form-group">
             <div className="form-check">
-              <label className="form-radio-label" htmlFor="input-radio">
-                Type: radio(gaga)
-              </label>
               <input
                 type="radio"
                 className="form-check-input"
                 name="radio"
                 id="input-radio"
               />
+              <label className="form-radio-label" htmlFor="input-radio">
+                Type: radio(gaga)
+              </label>              
             </div>
           </div>
           <div className="form-group">
@@ -250,10 +250,10 @@ export default function AlleFormulare() {
           </div>
 
           <div className="form-group">
-            <label htmlFor="select-country">Select Country</label>
+            <label htmlFor="select-country">Land wählen</label>
             <select name="country" id="select-country" className="form-select">
               <optgroup label="Europa">
-                <option value="de">Deutschland</option>
+                <option value="de">Deutscheland</option>
                 <option value="at">Austria</option>
                 <option value="nl">Tulpen</option>
               </optgroup>

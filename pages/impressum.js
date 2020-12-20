@@ -1,11 +1,14 @@
 import Layout from '../components/layout';
-export default function Impressum() {
+import { Container, Row, Card, Button } from 'react-bootstrap'
+
+
+export default function Impressum({impressums}) {
   return(
     <Layout>
-    <div className="container">
+      <Container>
       <h1>Impressum</h1>
       <p>Finger, Whois or whatever die Domain OJE.ooo, wenn da nix bei rauskommt, zeig mich an.</p>
-    </div>
+      </Container>
     </Layout>
   )
 } 

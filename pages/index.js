@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { Container, Row, Card, Button, CardDeck } from 'react-bootstrap'
 import Link from 'next/link'
 import useTranslation from "next-translate/useTranslation";
 import Layout from "../components/layout";
@@ -27,7 +28,6 @@ export default function Home({ articles }) {
   let { t } = useTranslation();
   return (
     <Layout>
-      <main>
       <h1>{t("common:greeting")}</h1>
         <section>
         
@@ -39,22 +39,42 @@ export default function Home({ articles }) {
             quality={80}
             priority 
           />
-          <div className="container">
-            <h1>Agenda (geplant)</h1>
-            <div className="agenda-list">
-            <ul>
+          <Container>
+          <Row className="justify-content-md-between">
+            <CardDeck>
               {articles.map(article => (
-                <li key={article.sys.id}>
-                  <Link href={'/articles/' + article.fields.slug}>
-                    <a>{article.fields.title}</a>
-                  </Link>
-                </li>
+                <Card className="sml-card" key={article.sys.id}>
+                  <Card.Body >
+                    <Card.Title>Agenda (geplant)</Card.Title>
+                      <Card.Text>{article.fields.description}</Card.Text>
+                  </Card.Body>
+                  <Card.Footer>
+                    <Button variant="primary" href={'/articles/' + article.fields.slug}>
+                      {article.fields.title} 
+                    </Button>
+                  </Card.Footer>
+                </Card>
               ))}
-            </ul>
-            </div>
-          </div>
+            </CardDeck>
+          </Row>
+          
+          <Row className="justify-content-md-between">
+            <Card className="sml-card">
+              <Card.Body>
+                <Card.Title>Übungen</Card.Title>
+                {/* {articles.map(article => (
+                  <div key={article.sys.id}>
+                    <Card.Text>{article.fields.description}</Card.Text>
+                    <Button variant="primary" href={'/articles/' + article.fields.slug}>
+                      {article.fields.title} 
+                    </Button>
+                  </div>
+                ))} */}
+              </Card.Body>
+            </Card>
+          </Row>
+          </Container>
         </section>  
-      </main>
     </Layout>
   )
 }

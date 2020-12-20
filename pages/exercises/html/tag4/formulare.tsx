@@ -19,9 +19,9 @@ export default function Formulare() {
             <input name="checkbox" type="checkbox" className="form-check-input" id="exampleCheck1" />
             <label className="form-check-label" htmlFor="exampleCheck1">Spamletter bestellen?</label>
           </div>
-            <div className="form-group">
-              <button type="submit" className="btn btn-primary">HAU WEG!</button>
-            </div>
+          <div className="form-group">
+          <button type="submit" className="btn btn-primary">HAU WEG!</button>
+          </div>
         </form>
       </div>
       <div className="top">

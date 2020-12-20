@@ -1,7 +1,8 @@
 import Link from 'next/link'
+
 export default function Video() {
   return (
-    <div className="container">
+    <div>
       <h2>Video in HTML über &lt;video&gt;</h2>
       <blockquote>
         Das HTML{" "}
@@ -50,39 +51,41 @@ export default function Video() {
           </a>
         </li>
       </ul>
-      <div className="embed-responsive embed-responsive-16by9">
         <h5>
-          nur mp4 mit <code>&lt;video src</code>
+          nur mp4 mit <code>&lt;video src...</code>
         </h5>
-        <video
-          src="/assets/video/countdown_short.mp4"
-          controls
-          autoPlay
-          muted
-        >
-          <track src="/assets/video/countdown.de.vtt" default />
-        </video>
-      </div>
-      <div className="embed-responsive embed-responsive-16by9">
+        <div className="embed-responsive embed-responsive-16by9">
+          <video
+            src="/assets/video/countdown_short.mp4"
+            controls
+            autoPlay
+            muted
+          >
+            <track src="/assets/video/countdown.de.vtt" default />
+          </video>
+        </div>
         <h5>
-          mit h265.mp4, webm und mp4 <code>&lt;source src</code>
+          mit h265.mp4, webm und mp4 <code>&lt;source src...</code>
         </h5>
-        <video controls autoPlay muted>
-          <source
-            src="/assets/video/countdown_short.webm"
-            type="video/webm"
-          />
-          <source src="/assets/video/countdown_short.mp4" type="video/mp4" />
-          <source src="/assets/video/countdown_short_h265.mp4" />
-        </video>
-      </div>
-      <div className="embed-responsive embed-responsive-16by9">
-        <iframe
-          className="embed-responsive-item"
-          src="https://www.youtube.com/embed/pp3sYjG-gyQ"
-          allowFullScreen
-        ></iframe>
-      </div>
+        <div className="embed-responsive embed-responsive-16by9">
+          <video controls autoPlay muted>
+            <source
+              src="/assets/video/countdown_short.webm"
+              type="video/webm"
+            />
+            <source src="/assets/video/countdown_short.mp4" type="video/mp4" />
+            <source src="/assets/video/countdown_short_h265.mp4" />
+          </video>
+        </div>
+        <h5>embed iframe</h5>
+        <div className="embed-responsive embed-responsive-16by9">
+          <iframe
+            className="embed-responsive-item"
+            src="https://www.youtube.com/embed/pp3sYjG-gyQ"
+            allowFullScreen
+          ></iframe>
+        </div>
+
       <div className="top">
         <Link href="#top">
           <a>Nach oben</a>

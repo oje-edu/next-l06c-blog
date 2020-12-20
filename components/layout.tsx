@@ -118,6 +118,7 @@ export default function Layout({ children }) {
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="/kontakt">Kontakt</NavDropdown.Item>
                 </NavDropdown>
+                <Nav.Link href="/login">Anmelden</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>

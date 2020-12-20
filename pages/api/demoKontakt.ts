@@ -3,7 +3,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 // endpoint http://localhost:3000/api/demoKontakt
 export default function (req: NextApiRequest, res: NextApiResponse) {
 
-  console.log('REQUEST BODY', req.query)
+  // console.log('REQUEST BODY', req.query)
   const { method, body } = req
 
   if (req.method === 'POST') {

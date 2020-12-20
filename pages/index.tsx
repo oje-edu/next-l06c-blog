@@ -29,10 +29,10 @@ export default function Home({ articles }) {
     <Layout>
       <h1>{t("common:greeting")}</h1>
       <section>
-        <a href="https://d3q33rbmdkxzj.cloudfront.net/1589466137456_aFz3CE.png" target="_blank" rel="noreferrer">
+        <a href="https://wallpaperaccess.com/parrot-os" target="_blank" rel="noreferrer">
         <Image
           src="/assets/images/parrotFreedom.jpg"
-          alt="Parrot Security Linux - https://d3q33rbmdkxzj.cloudfront.net/1589466137456_aFz3CE.png"
+          alt="Parrot Security Linux - https://wallpaperaccess.com/parrot-os"
           width={1191}
           height={670}
           quality={80}

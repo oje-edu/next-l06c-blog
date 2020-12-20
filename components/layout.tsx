@@ -21,7 +21,7 @@ export default function Layout({ children }) {
       <Container>
         <header className={classes.header} id="top">
           {/* <nav className={classes.nav}> */}
-          <Navbar bg="light" expand="lg">
+          <Navbar expand="lg">
             <Navbar.Brand href="/">L06c</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">

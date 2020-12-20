@@ -30,8 +30,6 @@ export default function Tabellen() {
               <td>
                 <Link
                   href="https://www.imdb.com/title/tt0106469/"
-                  target="_blank"
-                  rel="noreferrer"
                 >
                   <a>Blood in, blood out</a>
                 </Link>
@@ -52,8 +50,6 @@ export default function Tabellen() {
               <td>
                 <Link
                   href="https://www.imdb.com/title/tt0174856/"
-                  target="_blank"
-                  rel="noreferrer"
                 >
                   <a>Hurricane</a>
                 </Link>
@@ -74,8 +70,6 @@ export default function Tabellen() {
               <td>
                 <Link
                   href="https://www.imdb.com/title/tt1210166/"
-                  target="_blank"
-                  rel="noreferrer"
                 >
                   <a>Die Kunst zu gewinnen</a>
                 </Link>
@@ -96,8 +90,6 @@ export default function Tabellen() {
               <td>
                 <Link
                   href="https://www.imdb.com/title/tt0114369/"
-                  target="_blank"
-                  rel="noreferrer"
                 >
                   <a>Sieben</a>
                 </Link>
@@ -118,8 +110,6 @@ export default function Tabellen() {
               <td>
                 <Link
                   href="https://www.imdb.com/title/tt0209144/"
-                  target="_blank"
-                  rel="noreferrer"
                 >
                   <a>Memento</a>
                 </Link>
@@ -162,8 +152,6 @@ export default function Tabellen() {
               <td>
                 <Link
                   href="https://www.imdb.com/title/tt0106469/"
-                  target="_blank"
-                  rel="noreferrer"
                 >
                   <a>Blood in, blood out</a>
                 </Link>
@@ -184,8 +172,6 @@ export default function Tabellen() {
               <td>
                 <Link
                   href="https://www.imdb.com/title/tt0174856/"
-                  target="_blank"
-                  rel="noreferrer"
                 >
                   <a>Hurricane</a>
                 </Link>
@@ -206,8 +192,6 @@ export default function Tabellen() {
               <td>
                 <Link
                   href="https://www.imdb.com/title/tt1210166/"
-                  target="_blank"
-                  rel="noreferrer"
                 >
                   <a>Die Kunst zu gewinnen</a>
                 </Link>
@@ -228,8 +212,6 @@ export default function Tabellen() {
               <td>
                 <Link
                   href="https://www.imdb.com/title/tt0114369/"
-                  target="_blank"
-                  rel="noreferrer"
                 >
                   <a>Sieben</a>
                 </Link>
@@ -250,8 +232,6 @@ export default function Tabellen() {
               <td>
                 <Link
                   href="https://www.imdb.com/title/tt0209144/"
-                  target="_blank"
-                  rel="noreferrer"
                 >
                   <a>Memento</a>
                 </Link>
@@ -294,9 +274,7 @@ export default function Tabellen() {
               <td>
                 <Link
                   href="https://www.imdb.com/title/tt0106469/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                 >
                   <a>Blood in, blood out</a>
                 </Link>
               </td>
@@ -316,8 +294,6 @@ export default function Tabellen() {
               <td>
                 <Link
                   href="https://www.imdb.com/title/tt0174856/"
-                  target="_blank"
-                  rel="noreferrer"
                 >
                   <a>Hurricane</a>
                 </Link>
@@ -338,8 +314,6 @@ export default function Tabellen() {
               <td>
                 <Link
                   href="https://www.imdb.com/title/tt1210166/"
-                  target="_blank"
-                  rel="noreferrer"
                 >
                   <a>Die Kunst zu gewinnen</a>
                 </Link>
@@ -360,8 +334,6 @@ export default function Tabellen() {
               <td>
                 <Link
                   href="https://www.imdb.com/title/tt0114369/"
-                  target="_blank"
-                  rel="noreferrer"
                 >
                   <a>Sieben</a>
                 </Link>
@@ -382,8 +354,6 @@ export default function Tabellen() {
               <td>
                 <Link
                   href="https://www.imdb.com/title/tt0209144/"
-                  target="_blank"
-                  rel="noreferrer"
                 >
                   <a>Memento</a>
                 </Link>

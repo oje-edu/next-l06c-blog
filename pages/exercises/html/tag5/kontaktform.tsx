@@ -7,7 +7,7 @@ export default function Kontaktform() {
       <p>Zeigt mal her Eure Hausaufgaben!</p>
       <p>Alle so, WAS FÜR HAUSAUFGABEN ???</p>
       <h3>ANNO 2021</h3>
-      <p>Dozent/in/egalnenHESSE</p>
+      <p>Dozent/in/egalHESSE!</p>
       <p>
         Na, alle gut ins Neue Jahr gerutscht? Prima! Und jetzt müssen wir
         erstmal die neuen GFN Pausenregeln klären. Unterricht bis EUCH der

@@ -1,12 +1,10 @@
 import Head from "next/head";
-import { Container, Row, Card, Button } from "react-bootstrap";
-import Link from "next/link";
-import classes from "../styles/layout.module.css";
+import { Container } from "react-bootstrap";
+import classes from "../styles/layout.module.scss";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import Form from "react-bootstrap/Form";
-import FormControl from "react-bootstrap/FormControl";
+
 
 import { useRouter } from "next/router";
 

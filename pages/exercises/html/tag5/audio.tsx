@@ -46,7 +46,6 @@ export default function Audio() {
         <audio
           src="/assets/audio/2015-00092-116_harvest-of-happiness.mp3"
           controls
-          volume="0.5"
         ></audio>
       </div>
       <div>

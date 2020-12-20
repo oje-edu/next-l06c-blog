@@ -64,3 +64,15 @@ table td {
   border: 1px solid rgba(96, 218, 235, 0.9);
   border-collapse: separate;
 }
+
+.red {
+  color: crimson;
+}
+
+.green {
+  color:rgb(55, 228, 92);
+}
+
+.purple {
+  color: #3e1d58;
+}

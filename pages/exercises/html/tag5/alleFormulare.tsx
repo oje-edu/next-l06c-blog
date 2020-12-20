@@ -129,8 +129,8 @@ export default function AlleFormulare() {
               className="form-control"
               name="tel"
               id="input-tel"
-              minLength="6"
-              maxLength="12"
+              minLength={6}
+              maxLength={12}
             />
           </div>
 
@@ -141,8 +141,8 @@ export default function AlleFormulare() {
               className="form-control"
               name="password"
               id="input-password"
-              minLength="8"
-              maxLength="36"
+              minLength={8}
+              maxLength={36}
             />
           </div>
 
@@ -311,8 +311,8 @@ export default function AlleFormulare() {
               className="form-control"
               name="nachricht"
               id="textarea-nachricht"
-              cols="50"
-              rows="10"
+              cols={50}
+              rows={10}
             ></textarea>
           </div>
           <div className="form-group">

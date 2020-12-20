@@ -23,8 +23,6 @@ export default function Bilder() {
       <div className="generatorsBtn">
         <Button
           href="https://loremipsum.io/de/21-of-the-best-placeholder-image-generators/"
-          target="_blank"
-          rel="noreferrer"
         >
           <a>21 Generatoren</a>
         </Button>
@@ -39,8 +37,6 @@ export default function Bilder() {
         <p>
           <Link
             href="https://placekitten.com/800/400"
-            target="_blank"
-            rel="noreferrer"
           >
             <a>source: placekitten.com</a>
           </Link>
@@ -56,8 +52,6 @@ export default function Bilder() {
         <p>
           <Link
             href="https://placebear.com/800/400"
-            target="_blank"
-            rel="noreferrer"
           >
             <a>source: placebear.com</a>
           </Link>
@@ -74,8 +68,6 @@ export default function Bilder() {
         <p>
           <Link
             href="https://picsum.photos/800/400"
-            target="_blank"
-            rel="noreferrer"
           >
             <a>source: picsum.photos</a>
           </Link>
@@ -92,8 +84,6 @@ export default function Bilder() {
         <p>
           <Link
             href="https://www.stevensegallery.com/800/400"
-            target="_blank"
-            rel="noreferrer"
           >
             <a>source: www.stevensegallery.com</a>
           </Link>

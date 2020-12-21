@@ -1,48 +1,31 @@
 import Link from 'next/link'
 import { useState } from "react"
-import {useRouter} from 'next/router'
-import { Container } from 'react-bootstrap'
-
-const preventDefault = f => e => {
-  e.preventDefault()
-  f(e)
-}
-export default function Formulare({action = '/api/demoKontakt'}) {
-  const router = useRouter()
-  const [query, setQuery] = useState('')
-
-  const handleParam = setValue => e => setValue(e.target.value)
-
-  const handleSubmit = preventDefault(() => {
-    router.push({
-      pathname: action,
-      query: {q: query},
-    })
-  })  
-
+import { Container, Form, Button } from 'react-bootstrap'
+export default function Formulare() {
   return (
     <Container>
       <h5>Formulare</h5>
       <div className="customForm">
-        <form onSubmit={handleSubmit}>
-          <h4>Email-Passwort</h4>
-          <div className="form-group">
-            <label htmlFor="exampleInputEmail1" className="form-label">Email:</label>
-            <input name="email" type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="reiner.zufall@gmail.com" value={query} onChange={handleParam(setQuery)}/>
-            <div id="emailHelp" className="form-text">Wir werden Ihre email-adresse nicht vermarkten.</div>
-          </div>
-          <div className="form-group">
-            <label htmlFor="exampleInputPassword1" className="form-label">Passwort:</label>
-            <input name="password" type="password" className="form-control" id="exampleInputPassword1" />
-          </div>
-          <div className="form-check">
-            <input name="checkbox" type="checkbox" className="form-check-input" id="exampleCheck1" />
-            <label className="form-check-label" htmlFor="exampleCheck1">Spamletter bestellen?</label>
-          </div>
-          <div className="form-group">
-          <button type="submit" className="btn btn-primary">HAU WEG!</button>
-          </div>
-        </form>
+      <Form>
+        <Form.Group controlId="formBasicEmail">
+          <Form.Label>Email:</Form.Label>
+          <Form.Control type="email" placeholder="Deine Email" />
+          <Form.Text className="text-muted">
+            Natürlich wird die Email zur Vermartung weiterverkauft. Von irgendwas muss ich ja leben.
+          </Form.Text>
+        </Form.Group>
+
+        <Form.Group controlId="formBasicPassword">
+          <Form.Label>Passwort</Form.Label>
+          <Form.Control type="password" placeholder="Passwort" />
+        </Form.Group>
+        <Form.Group controlId="formBasicCheckbox">
+          <Form.Check type="checkbox" label="Check me out" />
+        </Form.Group>
+        <Button variant="primary" type="submit">
+          Hau weg!
+        </Button>
+      </Form>
       </div>
       <div className="top">
         <Link href="#top">

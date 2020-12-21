@@ -6,8 +6,9 @@
 
 ### some parts of the APP are not best practice!
 
-[on vercel]("https://next-l06c-blog.vercel.app/")
-[on nginx]("https://l06c.oje.ooo/)
+[on vercel](https://next-l06c-blog.vercel.app/)
+
+[on nginx](https://l06c.oje.ooo/)
 
 
 #### nginx conf

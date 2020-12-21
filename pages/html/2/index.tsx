@@ -55,6 +55,11 @@ export default function Html2 () {
           />
         </Container>
       </section>
+      <div className="top">
+        <Link href="#top">
+          <a>Nach oben</a>
+        </Link>
+      </div>
     </Layout>
   );
 }

@@ -1,47 +1,47 @@
 import Link from "next/link";
 import Layout from "../../../components/layout";
 import Image from 'next/image'
+import { Container } from 'react-bootstrap'
 import InterneVerlinkungen from "./interneVerlinkungen";
 import ExterneVerlinkungen from "./externeVerlinkungen";
 import Bilder from "./bilder";
 import BilderMitRelativenPfad from "./bilderMitRelativenPfad";
 
-export default function Html3 () {
+export default function Html3() {
   return (
     <Layout>
-      <main>
-        <div>
-          <nav>
-            <h1>Übungen am Tag 3</h1>
-            <ol type="1">
-              <li>
-                <Link href="#lIntern">
-                  <a>Interne Verlinkungen</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="#lExtern">
-                  <a>Externe Verlinkungen</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="#bExtern">
-                  <a>Bilder</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="#bIntern">
-                  <a>Bilder mit relativen Pfad</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="#badge">
-                  <a>Auszeichnung</a>
-                </Link>
-              </li>              
-            </ol>
-          </nav>
-        </div>
+      <Container>
+        <nav>
+          <h1>Übungen am Tag 3</h1>
+          <ol type="1">
+            <li>
+              <Link href="#lIntern">
+                <a>Interne Verlinkungen</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="#lExtern">
+                <a>Externe Verlinkungen</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="#bExtern">
+                <a>Bilder</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="#bIntern">
+                <a>Bilder mit relativen Pfad</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="#badge">
+                <a>Auszeichnung</a>
+              </Link>
+            </li>
+          </ol>
+        </nav>
+
         <section id="lIntern">
           <h2>Interne Verlinkungen</h2>
           <InterneVerlinkungen />
@@ -70,8 +70,13 @@ export default function Html3 () {
             width={5334}
             height={3759}
           />
-        </section>        
-      </main>
+        </section>
+        <div className="top">
+          <Link href="#top">
+            <a>Nach oben</a>
+          </Link>
+        </div>
+      </Container>
     </Layout>
   );
 }

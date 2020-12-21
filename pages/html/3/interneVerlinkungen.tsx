@@ -1,7 +1,8 @@
 import Link from "next/link";
+import { Container } from 'react-bootstrap'
 export default function InterneVerlinkungen() {
   return (
-    <div>
+    <Container>
       <nav>
         <ul>
           <li>
@@ -22,8 +23,8 @@ export default function InterneVerlinkungen() {
         </ul>
       </nav>
 
-      <div>
-        <h2 id="kap01">Kapitel 01</h2>
+        <div id="kap01">
+        <h2>Kapitel 01</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
           dolores cumque tempora inventore suscipit. Tenetur, molestias.
@@ -146,8 +147,8 @@ export default function InterneVerlinkungen() {
         </div>
 
         <hr />
-
-        <h2 id="kap02">Kapitel 02</h2>
+        <div id="kap02">
+        <h2>Kapitel 02</h2>
         <p>
           Iure tenetur dolore aliquam quibusdam, eos accusantium cum eum
           repudiandae itaque ratione obcaecati cupiditate quo velit asperiores,
@@ -263,6 +264,7 @@ export default function InterneVerlinkungen() {
           officia, velit, ut laudantium deserunt accusantium earum ipsa fugit
           dignissimos laborum autem culpa repellendus blanditiis corrupti!
         </p>
+        </div>
         <div className="top">
           <Link href="#top">
             <a>Nach oben</a>
@@ -271,7 +273,8 @@ export default function InterneVerlinkungen() {
 
         <hr />
 
-        <h2 id="kap03">Kapitel 03</h2>
+        <div id="kap03">
+        <h2>Kapitel 03</h2>
         <p>
           Maxime, earum doloribus deleniti aspernatur nulla beatae tempora optio
           maiores est quos dolore minima, enim dolores expedita cumque
@@ -389,12 +392,13 @@ export default function InterneVerlinkungen() {
           dolores reiciendis qui quis quaerat labore voluptatibus. Explicabo rem
           corrupti, voluptatibus error nulla laborum cupiditate?
         </p>
+        </div>
       </div>
       <div className="top">
         <Link href="#top">
           <a>Nach oben</a>
         </Link>
       </div>
-    </div>
+    </Container>
   );
 }

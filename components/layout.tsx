@@ -21,68 +21,68 @@ export default function Layout({ children }) {
       <Container>
         <header className={classes.header} id="top">
           {/* <nav className={classes.nav}> */}
-          <Navbar expand="lg">
+          <Navbar bg="light" variant="light" expand="lg">
             <Navbar.Brand href="/">L06c</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="mr-auto">        
+              <Nav className="mr-auto purple">        
                 <NavDropdown title="HTML Übungen" id="basic-nav-dropdown">
                   <NavDropdown.Item>
                     <Link href="/html/1">
-                      <a>Tag 1</a>
+                      <Nav.Link as="a" href="/html/1">Tag 1</Nav.Link>
                     </Link>
                   </NavDropdown.Item>
                   <NavDropdown.Item>
                     <Link href="/html/2">
-                      <a>Tag 2</a>
+                      <Nav.Link as="a" href="/html/2">Tag 2</Nav.Link>
                     </Link>
                   </NavDropdown.Item>
                   <NavDropdown.Item>
                     <Link href="/html/3">
-                      <a>Tag 3</a>
+                      <Nav.Link as="a" href="/html/3">Tag 3</Nav.Link>
                     </Link>
                   </NavDropdown.Item>
                   <NavDropdown.Item>
                     <Link href="/html/4">
-                      <a>Tag 4</a>
+                      <Nav.Link as="a" href="/html/4">Tag 4</Nav.Link>
                     </Link>
                   </NavDropdown.Item>
                   <NavDropdown.Item>
                     <Link href="/html/5">
-                      <a>Tag 5</a>
+                      <Nav.Link as="a" href="/html/5">Tag 5</Nav.Link>
                     </Link>
                   </NavDropdown.Item>
                 </NavDropdown>
-                <NavDropdown title="CSS Übungen" id="basic-nav-dropdown">
+                <NavDropdown title="CSS Übungen" id="css-nav-dropdown">
                   <NavDropdown.Item>
                     <Link href="/css/1">
-                      <a>Tag 6</a>
+                      <Nav.Link as="a" href="/css/1">Tag 6</Nav.Link>
                     </Link>
                   </NavDropdown.Item>
                   <NavDropdown.Item>
                     <Link href="/css/2">
-                      <a>Tag 7</a>
+                      <Nav.Link as ="a" href="/css/2">Tag 7</Nav.Link>
                     </Link>
                   </NavDropdown.Item>
                   <NavDropdown.Item>
                     <Link href="/css/3">
-                      <a>Tag 8</a>
+                      <Nav.Link as="a" href="/css/3">Tag 8</Nav.Link>
                     </Link>
                   </NavDropdown.Item>
                   <NavDropdown.Item>
                     <Link href="/css/4">
-                      <a>Tag 9</a>
+                      <Nav.Link as="a" href="/css/4">Tag 9</Nav.Link>
                     </Link>
                   </NavDropdown.Item>
                   <NavDropdown.Item>
                     <Link href="/css/5">
-                      <a>Tag 10</a>
+                      <Nav.Link as="a" href="/css/5">Tag 10</Nav.Link>
                     </Link>
                   </NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link>
-                  <Link href="/TheEndMyOnlyFriend"><a>Fehler 404</a></Link>
-                </Nav.Link>     
+                  <Link href="/TheEndMyOnlyFriend">
+                    <Nav.Link as="a" href="/TheEndMyOnlyFriend">Fehler 404</Nav.Link>
+                  </Link>
               </Nav>
               <Nav className="ml-auto">
                 <Nav.Link
@@ -99,24 +99,27 @@ export default function Layout({ children }) {
                 >
                   Github
                 </Nav.Link>
-                <NavDropdown title="Rechtliches" id="basic-nav-dropdown">
+                <NavDropdown title="Rechtliches" id="rechtliches-nav-dropdown">
                   <NavDropdown.Item>
-                    <Link href="/impressum"><a>Impressum</a></Link>
-
+                    <Link href="/impressum">
+                      <Nav.Link as="a" href="/impressum">Impressum</Nav.Link>
+                    </Link>
                   </NavDropdown.Item>
                   <NavDropdown.Item>
                     <Link href="/datenschutz">
-                      <a>Datenschutz</a>
+                      <Nav.Link as="a" href="/datenschutz">Datenschutz</Nav.Link>
                     </Link>
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item>
-                    <Link href="/kontakt"><a>Kontakt</a></Link>
+                    <Link href="/kontakt">
+                      <Nav.Link as="a" href="/kontakt">Kontakt</Nav.Link>
+                    </Link>
                   </NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link>
-                  <Link href="/login"><a>Anmelden</a></Link>
-                </Nav.Link>
+                  <Link href="/login">
+                    <Nav.Link as="a" href="/login">Anmelden</Nav.Link>
+                  </Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>

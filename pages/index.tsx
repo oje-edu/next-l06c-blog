@@ -27,7 +27,7 @@ export default function Home({ articles }) {
   let { t } = useTranslation();
   return (
     <Layout>
-      <h1>{t("common:greeting")}</h1>
+      <h1 className="text-center">{t("common:greeting")}</h1>
       <section>
         <a href="https://wallpaperaccess.com/parrot-os" target="_blank" rel="noreferrer">
         <Image
@@ -52,33 +52,14 @@ export default function Home({ articles }) {
                   <Card.Footer>
                     <Button
                       variant="success"
-                      href={"/articles/" + article.fields.slug}
                     >
-                      {article.fields.title}
+                      <Link href={"/articles/" + article.fields.slug}>
+                        <a>{article.fields.title}</a>
+                      </Link>                      
                     </Button>
                   </Card.Footer>
                 </Card>
               ))}
-            </CardDeck>
-          </Col>
-        </Row>
-
-        <Row className="justify-content-md-between">
-          <Col>
-            <CardDeck>
-              <Card className="sml-card">
-                <Card.Body>
-                  <Card.Title>Übungen</Card.Title>
-                  {/* {articles.map(article => (
-                  <div key={article.sys.id}>
-                    <Card.Text>{article.fields.description}</Card.Text>
-                    <Button variant="primary" href={'/articles/' + article.fields.slug}>
-                      {article.fields.title} 
-                    </Button>
-                  </div>
-                ))} */}
-                </Card.Body>
-              </Card>
             </CardDeck>
           </Col>
         </Row>

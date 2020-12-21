@@ -1,36 +1,35 @@
 import Link from "next/link";
 import Layout from "../../../components/layout";
 import Image from 'next/image'
+import { Container } from 'react-bootstrap'
 import Tabellen from './tabellen';
 import Formulare from './formulare';
 
 
-export default function Html4 () {
+export default function Html4() {
   return (
     <Layout>
-      <main>
-        <div>
-          <nav>
-            <h1>Übungen am Tag 4</h1>
-            <ol type="1">
-              <li>
-                <Link href="#tabellen">
-                  <a>Tabellen</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="#formulare">
-                  <a>Formulare</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="#badge">
-                  <a>Auszeichnung</a>
-                </Link>
-              </li>              
-            </ol>
-          </nav>
-        </div>
+      <Container>
+        <nav>
+          <h1>Übungen am Tag 4</h1>
+          <ol type="1">
+            <li>
+              <Link href="#tabellen">
+                <a>Tabellen</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="#formulare">
+                <a>Formulare</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="#badge">
+                <a>Auszeichnung</a>
+              </Link>
+            </li>
+          </ol>
+        </nav>
 
         <section id="tabellen">
           <h2>Tabellen</h2>
@@ -52,11 +51,11 @@ export default function Html4 () {
           />
         </section>
         <div className="top">
-        <Link href="#top">
-          <a>Nach oben</a>
-        </Link>
-      </div>        
-      </main>
+          <Link href="#top">
+            <a>Nach oben</a>
+          </Link>
+        </div>
+      </Container>
     </Layout>
   );
 }

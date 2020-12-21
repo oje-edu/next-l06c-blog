@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import Image from "next/image";
+import { Container } from 'react-bootstrap'
 export default function BilderMitRelativenPfad() {
+
   return (
-    <div className="container">
+    <Container>
       <Image
         src="/assets/images/buddhabrot1.jpg"
         alt="Ein Meme ©Spruch von Thorsten OJE"
@@ -29,6 +31,6 @@ export default function BilderMitRelativenPfad() {
           <a>Nach oben</a>
         </Link>
       </div>
-    </div>
+    </Container>
   );
 }

@@ -1,10 +1,10 @@
 import Link from "next/link";
-import Button from "react-bootstrap/Button";
+import { Button, Container} from "react-bootstrap";
 import Image from "next/image";
 
 export default function Bilder() {
   return (
-    <div className="container">
+    <Container>
       <h2>Bilder im Web</h2>
       <Image
         src="https://images.pexels.com/photos/567540/pexels-photo-567540.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
@@ -94,7 +94,7 @@ export default function Bilder() {
           <a>Nach oben</a>
         </Link>
       </div>
-    </div>
+    </Container>
     
   );
 }

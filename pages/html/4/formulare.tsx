@@ -1,14 +1,34 @@
 import Link from 'next/link'
-export default function Formulare() {
+import { useState } from "react"
+import {useRouter} from 'next/router'
+import { Container } from 'react-bootstrap'
+
+const preventDefault = f => e => {
+  e.preventDefault()
+  f(e)
+}
+export default function Formulare({action = '/api/demoKontakt'}) {
+  const router = useRouter()
+  const [query, setQuery] = useState('')
+
+  const handleParam = setValue => e => setValue(e.target.value)
+
+  const handleSubmit = preventDefault(() => {
+    router.push({
+      pathname: action,
+      query: {q: query},
+    })
+  })  
+
   return (
-    <div>
+    <Container>
       <h5>Formulare</h5>
       <div className="customForm">
-        <form action="/api/demoKontakt" method="GET">
+        <form onSubmit={handleSubmit}>
           <h4>Email-Passwort</h4>
           <div className="form-group">
             <label htmlFor="exampleInputEmail1" className="form-label">Email:</label>
-            <input name="email" type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="reiner.zufall@gmail.com" />
+            <input name="email" type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="reiner.zufall@gmail.com" value={query} onChange={handleParam(setQuery)}/>
             <div id="emailHelp" className="form-text">Wir werden Ihre email-adresse nicht vermarkten.</div>
           </div>
           <div className="form-group">
@@ -63,6 +83,6 @@ export default function Formulare() {
           <a>Nach oben</a>
         </Link>
       </div>
-    </div>
+    </Container>
   )
 }
